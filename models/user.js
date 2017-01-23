@@ -15,12 +15,9 @@ module.exports = function(sequelize, DataTypes) {
                 this.setDataValue('password', hash);
             }
         },
-        name: {type: DataTypes.STRING, allowNull: false},
+        name: {type: DataTypes.STRING, allowNull: true},
         photo: {type: DataTypes.STRING, allowNull: true},
-        grupo: {type: DataTypes.STRING, allowNull: false},
-        address: {type: DataTypes.STRING, allowNull: true},
-        phone: {type: DataTypes.STRING, allowNull: true},
-        recibir_email: {type: DataTypes.STRING, allowNull: false, defaultValue: 1},
+        group: {type: DataTypes.STRING, allowNull: true},
     }, {
         classMethods: {
             associate: function(models) {
