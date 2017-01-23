@@ -1,0 +1,35 @@
+{
+  "name": "azimutAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "1.0.1",
+    "jsonwebtoken": "^7.2.1",
+    "kcors": "2.2.0",
+    "koa": "2.0.0-alpha.7",
+    "koa-body": "2.0.0",
+    "koa-jwt": "2.1.0",
+    "koa-logger": "^2.0.0",
+    "koa-mount": "^2.0.0",
+    "koa-router": "7.0.1",
+    "koa-static": "3.0.0",
+    "mysql": "^2.12.0",
+    "sequelize": "3.29.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-preset-es2015": "^6.14.0",
+    "nodemon": "1.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node server.js",
+    "watch": "nodemon server.js --exec babel-node",
+    "init": "node --harmony-async-await utils/initialize.js"
+  },
+  "author": "",
+  "license": "GPL"
+}
