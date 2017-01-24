@@ -27,6 +27,7 @@ var show = async function(ctx, next){
 
 var create = async function(ctx, next){
     var valores = await ctx.request.body;
+    valores.userId = ctx.state.user.userId;
 
     var post = await models.Post.create(valores);
 
