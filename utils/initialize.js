@@ -5,7 +5,7 @@ async function main(){
         console.log(e);
     });
 
-    await db.User.create({username: 'admin', password: 'pass'});
+    await db.User.create({username: 'admin', password: 'pass', email: 'admin@admin.com'});
 }
 
 main();
