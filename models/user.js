@@ -35,7 +35,7 @@ module.exports = function(sequelize, DataTypes) {
                 return bcrypt.compareSync(candidatePassword, this.getDataValue('password'));
             }
         },
-        tableName: 'usuarios',
+        tableName: 'users',
         hooks: {
 
         }

@@ -5,7 +5,7 @@ module.exports = function(sequelize, DataTypes) {
         name: {type: DataTypes.STRING, allowNull: false },
     }, {
         timestamps: false,
-        tableName: 'categorias'
+        tableName: 'blog_categories'
     });
 
     return Category;

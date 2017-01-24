@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
         slug: {type: DataTypes.STRING, allowNull: false }
     }, {
         timestamps: true,
-        tableName: 'secciones',
+        tableName: 'pages',
         classMethods: {
             associate: function(models) {
                 
